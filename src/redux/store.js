@@ -21,6 +21,7 @@ const NewTodoSlice = createSlice({
                 descrip: action.payload.descrip,
                 author: action.payload.author
             }
+            console.log("azhar", newData)
             state = state.unshift(newData);
 
         },

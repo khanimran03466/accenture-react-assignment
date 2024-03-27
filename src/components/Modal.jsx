@@ -69,7 +69,7 @@ const Modal = ({ isOpen, isEdit, blogData }) => {
         />
         <input
           type="text"
-          name="authors"
+          name="author"
           placeholder="Author"
           onChange={onInputChange}
           value={blogDetails.author}
