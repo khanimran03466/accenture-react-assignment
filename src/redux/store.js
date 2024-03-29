@@ -14,14 +14,13 @@ const NewTodoSlice = createSlice({
     initialState: initialState,
     reducers: {
 
-        addNewData: (state, action) => {
+        addNewData: (state, action) => { 
             const newData = {
                 id: (~~(Math.random() * 1000)),
                 title: action.payload.title,
                 descrip: action.payload.descrip,
                 author: action.payload.author
             }
-            console.log("azhar", newData)
             state = state.unshift(newData);
 
         },
